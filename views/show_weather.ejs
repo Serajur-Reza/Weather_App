@@ -25,9 +25,10 @@
                                     <p>
                                         <span class="title"><%= data.name %></span>
                                         <br>
-                                        <span class="subtitle">Temperature - <%= data.main.temp -273.16 %> °C</span>
+                                        <span class="subtitle">Description - <%= data.weather[0].description %></span>
                                         <br>Humidity - <%= data.main.humidity %>%
-                                        <br>Description - <%= data.weather[0].description %>
+                                        <br>Temperature - <%= data.main.temp -273.16 %>°C
+                                        <br>Wind Speed - <%= data.wind.speed %>km/h
                                     </p>
                                 </div>
                             </div>
